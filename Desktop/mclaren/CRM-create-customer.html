@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title></title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="description" content="">
+<meta property="og:image" content="">
+<meta property="og:image:type" content="">
+<meta property="og:title" content="" />
+<meta property="og:description" content="" />
+<!--<link rel="icon" href="img/favicon.ico" type="image/x-icon"/>
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"/>-->
+<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+<link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600' rel='stylesheet' type='text/css'>
+
+<link rel="stylesheet" href="css/xenon-core.css">
+<link rel="stylesheet" href="css/xenon-forms.css">
+<link rel="stylesheet" href="css/xenon-components.css">
+<link rel="stylesheet" href="css/xenon-skins.css">
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/style.css">
+
+
+</head>
+<body>
+<!--header starts here-->
+<header class="header">
+<nav class="navbar navbar-default margin-bottom-0 border-radius-0 no_border navbar_custom">
+  <div class="container no_padding">
+	<div class="navbar-header width-100">
+	  <a class="navbar-brand padding-left-10 padding-right-10" href="#">
+		<img src="img/Back-arrow.png">
+	  </a>
+	  <a class="navbar-brand padding-left-10 padding-right-10" href="#">
+		<img src="img/cart.png" class="pull-left margin-left-10"> <span class="margin-left-10 font-weight-100">CRM</span>
+	  </a>
+	  <div class="pull-right">
+		<a class="navbar-brand" href="#">
+			<img src="img/launch.png">
+		</a>
+		<a class="navbar-brand padding-top-20 padding-left-10 padding-right-10" href="#">
+			<img src="img/dashbord.png">
+		</a>
+	  </div>
+	</div>
+	
+  </div>
+</nav>
+<nav class="navbar navbar-default padding-bottom-0 border-radius-0 no_border navbar_custom_tb">
+	<div class="container no_padding">
+		<div class="navbar-header width-100">
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="#">Create Customer</a></li>
+				<li><a href="#">Search Customer</a></li>
+				
+			</ul>
+		</div>
+	</div>
+</nav>
+</header>
+<!--header ends here-->
+<div class="clear"></div>
+<!-- CRM Page Code -->
+
+<div class="body-Container">
+<form role="form" id="form1" method="post" class="validate formm1"  > 
+	<div class="form-Container margin-top-30">
+		<div class="col-sm-4 no_padding ">
+		<div class="col-sm-12 firstCol form-Container1">
+	       <h3 class="panel-title">Primary Details</h3>
+	       <div class="display-Inline-block">
+	       <div class="float-left-width40 Upload-photoForm">
+            <div class="custom-file ">
+<div class="text"></div>
+
+<input type="file" id="file" />
+</div>
+	       	<!-- <div class="Upload-photoForm" onclick="UploadPhoto()"></div> -->
+           <!--  <input type='text' class="Upload-photoForm" onclick="UploadPhoto()"/> -->
+			<!-- <form action="upload-file.php" class="dropzone Upload-photoForm"></form> -->
+				       </div>
+	       	      <div class="float-left-width60">
+	       	      	<div class="panel-body no_padding panel_body_co">
+						<div class="margin-bottom-0">
+							<div class="form-group margin-bottom-0">
+			
+									<select class="form-control font-size-12 border-radius-0 CRM-Dropdown">
+                                        <option value="">Title</option>
+										<option value="">MR</option>
+										<option value="">MRS</option>
+																				
+									</select>
+
+							
+									</div>
+								</div>
+							</div>
+	       	      </div>
+	       	      <div class="float-left-width60">
+	       	      		<div class="col wide2">
+								<!-- <input id="firstName" type="text" class="border-radius-0" placeholder="First Name" data-validate="required" data-message-required="This is custom message for required field."> -->
+        <input type="text" class="form-control border-radius-0" name="text" data-validate="text" placeholder="First Name">
+							</div>
+	       	      </div>
+	       	  </div>
+	       	       <div class="">
+	       	      		<div class="col wide2">
+								<input type="text" class="border-radius-0" placeholder="Last Name" onfocusout="validateName();">
+							</div>
+	       	      </div>
+	       	      <div class="">
+	       	      			<div class="form-group">
+																
+							
+								<div class="input-group wide3">
+									<input type="text" class="form-control datepicker" data-format="D, dd MM yyyy" placeholder="DOB">
+									
+									<div class="input-group-addon">
+										<a href="#"><i class="glyphicon glyphicon-calendar calender"></i></a>
+									</div>
+								</div>
+							
+						</div>
+	       	      </div>
+	       	      <div class="">
+	       	      		
+
+							  <form role="form" class="validate">
+							<p>Gender</p>
+							    <label class="radio-inline padding-left0">
+							     <input type="radio" name="radio-3" class="cbr cbr-orange">Male
+							    </label>
+							    <label class="radio-inline">
+							     <input type="radio" name="radio-3" class="cbr cbr-orange">Female
+							    </label>
+							    
+							 
+						
+	       	      </div>
+	       	        <div class="">
+	       	      		<div class="col wide4">
+								<input type="text" class="border-radius-0" placeholder="Company">
+							</div>
+	       	      </div>
+	       	        <div class="">
+	       	      		<div class="col wide2">
+								<input type="text" class="border-radius-0" placeholder="Job Title">
+							</div>
+	       	      </div>
+	      
+	    </div>
+	</div>
+	    <div class="col-sm-4 firstCol form-Container1">
+	       <h3 class="panel-title">Contact Details</h3>
+                <div class="margin-top20">
+	       	      		<div class="col wide2">
+                        <input type="text" class="form-control border-radius-0" name="number" data-validate="number" placeholder="Mobile" />
+								<!-- <input type="text" class="border-radius-0" placeholder="Mobile"> -->
+							</div>
+	       	      </div>
+	       	      <div class="">
+	       	      		<div class="col wide2 margin-top-5px">
+								<input type="text" class="form-control border-radius-0" name="number" data-validate="number" placeholder="Telephone">
+							</div>
+	       	      </div>
+	       	      <div class="">
+	       	      		<div class="col wide2 margin-top-5px">
+								<input type="text" class="form-control border-radius-0" name="number" data-validate="number" placeholder="Secondary contact">
+							</div>
+	       	      </div>
+	       	      <div class="">
+	       	      		<div class="col wide2">
+								<input type="text" class="border-radius-0" name="email" data-validate="email" placeholder="Email address">
+							 	
+							</div>
+	       	      </div>
+	       	      <div class="panel-body no_padding panel_body_co ">
+						<form role="form" class="margin-bottom-0 margin-top10 ">
+							<div class="form-group margin-bottom-0">
+			
+									<select class="form-control font-size-12 border-radius-0 CRM-Dropdown " placeholder="Title">
+										<option value="">Contact Preference</option>
+										<option value="">Mobile</option>
+										<option value="">Telephone</option>
+										<option value="">Secondary contact</option>
+										<option value="">Email address</option>
+										
+										
+									</select>
+
+							
+									</div>
+								</form>
+							</div>
+</form>
+	    </div>
+
+	    <div class="col-sm-4 thirdCol form-Container1">
+	     <h3 class="panel-title">Primary Address</h3>
+	     	<div class="address-Type">
+	     			   <div class="panel-body no_padding panel_body_co">
+						<form role="form" class="margin-bottom-0">
+							<div class="form-group margin-bottom-0 margin-top-15">
+			
+									<select class="form-control font-size-12 border-radius-0 CRM-Dropdown" placeholder="Title">
+										<option value="">Address Type</option>
+										<option value="">Mobile</option>
+										<option value="">Telephone</option>
+										<option value="">Secondary contact</option>
+										<option value="">Email address</option>
+										
+										
+									</select>
+
+							
+									</div>
+								</form>
+							</div>
+	     	</div>
+	     	<div class="steetAddress">
+	     			<div class="form-group margin-bottom2">
+
+<textarea class="form-control streetTextArea height-95" rows="5" placeholder="Street Address"></textarea>
+</div>
+
+	     	</div>
+	     	<div class="CountryDropdown">
+	     			 <div class="panel-body no_padding panel_body_co">
+						<form role="form" class="margin-bottom-0 margin-top-5px">
+							<div class="form-group margin-bottom-0">
+			
+									<select class="form-control font-size-12 border-radius-0 CRM-Dropdown" placeholder="Title">
+										<option value="">Country</option>
+										<option value="">India</option>
+										<option value="">USA</option>
+										
+										
+										
+									</select>
+
+							
+									</div>
+								</form>
+							</div>
+
+	     	</div>
+	     	<div class="StateDropdown">
+	     			 <div class="panel-body no_padding panel_body_co">
+						<form role="form" class="margin-bottom-0">
+							<div class="form-group margin-bottom-0">
+			
+									<select class="form-control font-size-12 border-radius-0 CRM-Dropdown" placeholder="Title">
+										<option value="">State</option>
+										<option value="">Maharashtra</option>
+										<option value="">Delhi</option>
+										<option value="">Goa</option>
+										
+										
+										
+									</select>
+
+							
+									</div>
+								</form>
+							</div>
+
+	     	</div>
+	     	<div class="CityDropdown">
+	     			 <div class="panel-body no_padding panel_body_co">
+						<form role="form" class="margin-bottom-0">
+							<div class="form-group margin-bottom-0">
+			
+									<select class="form-control font-size-12 border-radius-0 CRM-Dropdown" placeholder="Title">
+										<option value="">City</option>
+										<option value="">Pune</option>
+										<option value="">Mumbai</option>
+										
+										
+										
+									</select>
+
+							
+									</div>
+								</form>
+							</div>
+
+	     	</div>
+	     	<div class="PinCode">
+	     			<div class="col wide2">
+								<input type="text" class="form-control border-radius-0" name="number" data-validate="number" placeholder="Pin Coad">
+							</div>
+
+	     	</div>
+	    </div>
+
+	</div>
+	<div class="Btn-Container">
+		<a href="" class="btn btn-default my-btn-orange width-100 margin-bottom-20 margin-top-30">Submit</a></div>
+	</form>	
+</div>
+<!-- End CRM Page Code -->
+
+<div class="clear"></div>
+<!--<div class="footer_line"></div>-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="css/select2.css">
+<link rel="stylesheet" href="css/select2-bootstrap.css">
+
+
+
+<!-- Imported styles on this page -->
+<link rel="stylesheet" href="css/dropzone.css">
+
+<!-- Bottom Scripts -->
+<script src="js/select2.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/jquery.selectBoxIt.min.js"></script>
+<script src="js/TweenMax.min.js"></script>
+<script src="js/resizeable-min.js"></script>
+<script src="js/joinable.js"></script>
+<script src="js/xenon-api.js"></script>
+<script src="js/xenon-toggles.js"></script>
+
+
+<!-- Imported scripts on this page -->
+<script src="js/dropzone.min.js"></script>
+
+
+
+
+<!-- For Calander -->
+<!-- Imported styles on this page -->
+<link rel="stylesheet" href="css/daterangepicker-bs3.css">
+<link rel="stylesheet" href="css/select2.css">
+<link rel="stylesheet" href="css/select2-bootstrap.css">
+<link rel="stylesheet" href="css/multi-select.css">
+<!-- Imported scripts on this page -->
+<script src="js/daterangepicker.js"></script>
+<script src="js/bootstrap-datepicker.js"></script>
+<script src="js/bootstrap-colorpicker.min.js"></script>
+
+
+
+
+<script src="js/bootstrap-tagsinput.min.js"></script>
+<script src="js/typeahead.bundle.js"></script>
+<script src="js/handlebars.min.js"></script>
+<script src="js/jquery.multi-select.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<!-- JavaScripts initializations and stuff -->
+<script src="js/xenon-custom.js"></script>
+
+	
+<!-- End  -->
+
+
+<script type="text/javascript">
+js=jquery.noConflict();
+function UploadPhoto(){
+
+js('#cv').change(function(){
+    js(this).siblings('.text').text(this.value || 'Nothing selected')
+});
+}
+
+</script>
+
+</body>
+
+</html>

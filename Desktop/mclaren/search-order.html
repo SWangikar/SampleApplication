@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta name="description" content="">
+		<meta property="og:image" content="">
+		<meta property="og:image:type" content="">
+		<meta property="og:title" content="" />
+		<meta property="og:description" content="" />
+		<!--<link rel="icon" href="img/favicon.ico" type="image/x-icon"/>
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"/>-->
+		<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+		<link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600' rel='stylesheet' type='text/css'>
+		
+		<link rel="stylesheet" href="css/xenon-core.css">
+		<link rel="stylesheet" href="css/xenon-forms.css">
+		<link rel="stylesheet" href="css/xenon-components.css">
+		<link rel="stylesheet" href="css/xenon-skins.css">
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/style.css">
+		<!--<style>
+			 table {
+            width: 100%;
+        }
+
+        thead, tbody, tr, td, th { display: block; }
+
+        tr:after {
+            content: ' ';
+            display: block;
+            visibility: hidden;
+            clear: both;
+        }
+
+        thead th {
+                   }
+
+        tbody {
+            height: 120px;
+            overflow-y: auto;
+        }
+
+        thead {
+            /* fallback */
+        }
+
+
+        tbody td, thead th {
+            width: 19.2%;
+            float: left;
+        }
+		</style>-->
+	</head>
+	<body class="overflow-hidden">
+		<!--header starts here-->
+		<header class="header">
+		<nav class="navbar navbar-default margin-bottom-0 border-radius-0 no_border navbar_custom">
+		  <div class="container no_padding">
+			<div class="navbar-header width-100">
+			  <a class="navbar-brand padding-left-10 padding-right-10" href="#">
+				<img src="img/Back-arrow.png">
+			  </a>
+			  <a class="navbar-brand padding-left-10 padding-right-10" href="#">
+				<img src="img/cart.png" class="pull-left margin-left-10"> <span class="margin-left-10 font-weight-100">CRM</span>
+			  </a>
+			  <div class="pull-right">
+				<a class="navbar-brand" href="#">
+					<img src="img/launch.png">
+				</a>
+				<a class="navbar-brand padding-top-20 padding-left-10 padding-right-10" href="#">
+					<img src="img/dashbord.png">
+				</a>
+			  </div>
+			</div>
+			
+		  </div>
+		</nav>
+		<nav class="navbar navbar-default padding-bottom-0 border-radius-0 no_border navbar_custom_tb">
+			<div class="container no_padding">
+				<div class="navbar-header width-100">
+					<ul class="nav navbar-nav">
+						<li><a href="#">Create Order</a></li>
+						<li class="active"><a href="#">Search Order</a></li>
+						<li ><a href="#">Search Order</a></li>
+						<li ><a href="#">Search Order</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		</header>
+		<!--header ends here-->
+		<div class="clear"></div>
+		<!-- main part of page starts here-->
+		<div class="main_container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="col-md-3 less_padding tab_menu_col">
+						<div class="pull-menu"><i class="icon-angle-left"></i></div>
+						<div class="pull_menu_second"><i class="icon-angle-right"></i></div>
+						<div class="margin-top-10">
+							<!-- Nav tabs -->
+							<ul class="nav nav-tabs nav_tabs" role="tablist">
+								<li role="presentation" class="active">
+									<a href="#home" aria-controls="home" role="tab" data-toggle="tab" class="border-radius-0 search_icon">
+										<i class="icon-search"></i>
+									</a>
+								</li>
+								<li role="presentation">
+									<a href="#profile" aria-controls="profile" role="tab" data-toggle="tab" class="border-radius-0 filter_icon">
+										<i class="icon-filter"></i>
+									</a>
+								</li>
+								
+							</ul>
+							<div class="my-block"></div>
+							<!-- Tab panes -->
+							<div class="tab-content tab-my-content">
+								
+								<div role="tabpanel" class="tab-pane active" id="home">
+									<label> Enter Search Query</label>
+									<div class="col wide">
+										
+										<input type="text" class="border-radius-0" placeholder="Enter Name, mobile, Email"/>
+									</div>
+									<div class="col last">
+										
+										<button class="btn btn-default create_order_go border-radius-0" type="submit"><i class="icon-arrow-right"></i></button>
+									</div>
+									<div class="clear"></div>
+									<div class="panel-body no_padding panel_body_co">
+							
+										<form role="form" class="margin-bottom-0">
+											<div class="form-group margin-bottom-0">
+											
+											
+											<select class="form-control font-size-12 border-radius-0 " id="sboxit-1">
+												<option value="">Select Saved Criteria</option>
+												<option value="">Select Saved Criteria</option>
+												<option value="">Select Saved Criteria</option>
+												<option value="">Select Saved Criteria</option>
+												
+											</select>
+										
+											</div>
+										</form>
+									</div>
+									<div class="clear"></div>
+									 <div class="left-text margin-top-10 margin-bottom-10">
+										<span>Advanced Search</span><span class="glyphicon glyphicon-menu-right"></span><span class="glyphicon glyphicon-menu-right"></span>
+									</div> 
+									<div class="clear"></div>
+									<div class= "para-class margin-top-10 margin-bottom-10">
+									<div class="center-align-text"><b>Select Model</b></div>
+									</div>
+									<div class="clear"></div>
+									<div class="panel-body no_padding panel_body_co">
+							
+										<form role="form" class="margin-bottom-0">
+											<div class="form-group margin-bottom-0">
+											
+											
+											<select class="form-control font-size-12 border-radius-0 " id="sboxit-2">
+												<option value="">mcLAREN 650S SPIDER</option>
+												<option value="">mcLAREN 650S SPIDER</option>
+												<option value="">mcLAREN 650S SPIDER</option>
+												<option value="">mcLAREN 650S SPIDER</option>
+												
+											</select>
+										
+											</div>
+										</form>
+									</div>
+									<div class="clear"></div>
+									<div class="col-md-3">
+											<div class="input-append date" id="dp3" data-date="12-02-2012" data-date-format="dd-mm-yyyy">
+													<input class="span2" size="16" type="text" value="12-02-2012" readonly="">
+													<span class="add-on"><i class="icon-th"></i></span>
+										</div>
+									</div>
+									<div class="col-md-3">
+											<div class="input-append date" id="dp3" data-date="12-02-2012" data-date-format="dd-mm-yyyy">
+													<input class="span2" size="16" type="text" value="12-02-2012" readonly="">
+													<span class="add-on"><i class="icon-th"></i></span>
+										</div>
+									</div>
+										
+									
+									<div class="clear"></div>
+									<div class= "form-class margin-top-10 margin-bottom-10">
+										<form>
+											
+											<div class="form-group">
+												
+												<input type="text" class="form-control border-radius-0 form-input-class" id="inputPassword" placeholder="Customer Email ID">
+											</div>
+											<div class="form-group">
+												
+												<input type="text" class="form-control border-radius-0 form-input-class" id="inputPassword" placeholder="Deler Management System ref.">
+											</div>
+											
+											 <div class="checkbox NopaddingLeft">
+												<label ><input type="checkbox"> MOE Request</label>
+											</div>
+											<div class="button-class">
+											<button type="submit" class="btn btn-primary custom-btn">Search</button> 
+											</div>
+											
+										</form>
+									
+									</div>
+									
+					
+									
+									<!-- <div class="create_order_grey_box margin-top-20"> -->
+										<!-- <div class="pull-right">
+											<div class="edit_CO_ico"><i class="icon-pencil"></i></div>
+										</div> -->
+										<!-- <div class="clear"></div> -->
+										<!-- <div class="padding-left-30 padding-right-30">
+											<div class="row_icons_CO">
+												<div CLASS="row_icons_CO1" ><i class="icon-user" data-toggle="tooltip" data-placement="bottom" title="James Eva" data-original-title="James Eva"></i></div>
+												<div CLASS="row_icons_CO2">James Eva</div>
+											</div>
+											<div class="row_icons_CO">
+												<div CLASS="row_icons_CO1"><i class="icon-envelope" data-toggle="tooltip" data-placement="bottom" title="Jameseva@gmail.com" data-original-title="Jameseva@gmail.com"></i></div>
+												<div CLASS="row_icons_CO2">Jameseva@gmail.com</div>
+											</div>
+											<div class="row_icons_CO">
+												<div CLASS="row_icons_CO1"><i class="icon-user-md" data-toggle="tooltip" data-placement="bottom" title="CEO" data-original-title="CEO"></i></div>
+												<div CLASS="row_icons_CO2">CEO</div>
+											</div>
+											<div class="row_icons_CO">
+												<div CLASS="row_icons_CO1"><i class="icon-phone" data-toggle="tooltip" data-placement="bottom" title="0490 84009 4998" data-original-title="0490 84009 4998"></i></div>
+												<div CLASS="row_icons_CO2">0490 84009 4998</div>
+											</div>
+											<div class="row_icons_CO">
+												<div CLASS="row_icons_CO1"><i class="icon-mobile-phone" data-toggle="tooltip" data-placement="bottom" title="0490 84009 4998" data-original-title="0490 84009 4998"></i></div>
+												<div CLASS="row_icons_CO2">74849 74849</div>
+											</div>
+											<div class="center-text">
+												<a href="" class="btn btn-default my-btn-orange width-100 margin-bottom-20 margin-top-30" href="#">Update Owner Details</a>
+											</div>
+										</div> -->
+									<!-- 	<div class="clear"></div>
+									</div> -->
+								</div>
+								<div role="tabpanel" class="tab-pane" id="profile">
+									<div class="col wide">
+										<input type="text" class="border-radius-0" placeholder="Enter Filter criteria"/>
+									</div>
+									<div class="col last">
+										
+										<button class="btn btn-default create_order_go border-radius-0" type="submit"><i class="icon-save"></i></button>
+									</div>
+									<div class="clear"></div>
+									<div class="filter_panel ">
+										<div class="filter_nm click_collapse">Varient <i class="icon-chevron-up"></i></div>
+										<div class="filter_box filter_varient">
+										<div class="">
+							
+												<form role="form" class="form-horizontal margin-bottom-0">
+								
+													<div class="form-group">
+														<div class="form-block">
+														<label class="label_filter_tabs">
+															<input type="checkbox" class="cbr">
+															PS 4th june 2013 McL 2 <span class="in_lbl_right">10</span>
+														</label>
+														<label class="label_filter_tabs">
+															<input type="checkbox" class="cbr">
+															PS 4th june 2013 McL 2 <span class="in_lbl_right">10</span>
+														</label>
+														<label class="label_filter_tabs">
+															<input type="checkbox" class="cbr">
+															PS 4th june 2013 McL 2 <span class="in_lbl_right">10</span>
+														</label>
+														<label class="label_filter_tabs">
+															<input type="checkbox" class="cbr">
+															PS 4th june 2013 McL 2 <span class="in_lbl_right">10</span>
+														</label>
+														<label class="label_filter_tabs">
+															<input type="checkbox" class="cbr">
+															PS 4th june 2013 McL 2 <span class="in_lbl_right">10</span>
+														</label>
+														<label class="label_filter_tabs">
+															<input type="checkbox" class="cbr">
+															PS 4th june 2013 McL 2 <span class="in_lbl_right">10</span>
+														</label>
+														<label class="label_filter_tabs">
+															<input type="checkbox" class="cbr">
+															PS 4th june 2013 McL 2 <span class="in_lbl_right">10</span>
+														</label>
+														<label class="label_filter_tabs">
+															<input type="checkbox" class="cbr">
+															PS 4th june 2013 McL 2 <span class="in_lbl_right">10</span>
+														</label>
+														<label class="label_filter_tabs">
+															<input type="checkbox" class="cbr">
+															PS 4th june 2013 McL 2 <span class="in_lbl_right">10</span>
+														</label>
+														</div>
+													</div>
+												</form>
+											</div>
+											<div class="clear"></div>
+										</div>
+									</div>
+									<div class="filter_panel ">
+										<div class="filter_nm click_collapse">Model <i class="icon-chevron-up"></i></div>
+										<div class="filter_box filter_model">
+											<div class="">
+							
+												<form role="form" class="form-horizontal margin-bottom-0">
+								
+													<div class="form-group">
+														<div class="form-block">
+														<label class="label_filter_tabs">
+															<input type="checkbox" class="cbr">
+															MacLaren 12C CoupE <span class="in_lbl_right">10</span>
+														</label>
+														<label class="label_filter_tabs">
+															<input type="checkbox" class="cbr">
+															MacLaren 12C CoupE <span class="in_lbl_right">10</span>
+														</label>
+														<label class="label_filter_tabs">
+															<input type="checkbox" class="cbr">
+															MacLaren 12C CoupE <span class="in_lbl_right">10</span>
+														</label>
+														<label class="label_filter_tabs">
+															<input type="checkbox" class="cbr">
+															MacLaren 12C CoupE <span class="in_lbl_right">10</span>
+														</label>
+														
+														</div>
+													</div>
+												</form>
+											</div>
+										<div class="clear"></div>
+									</div>
+									</div>
+									<div class="filter_panel">
+										<div class="filter_nm click_collapse">Date Created <i class="icon-chevron-down"></i></div>
+										<div class="filter_box filter_date">
+											<div class="">
+							
+												<form role="form" class="form-horizontal margin-bottom-0">
+								
+													<div class="form-group">
+														<div class="form-block">
+														<label class="label_filter_tabs_date">
+																<div class="click_sub_date">
+																<input type="checkbox" class="cbr" checked>
+																2010 <i class="icon-chevron-up"></i><span class="in_lbl_right">10</span>
+																</div>
+																<div class="tabs_inside_date tabs_inside_date_first_child">
+																	<label class="sub_dates_check">
+																		<input type="checkbox" class="cbr">
+																		March<span class="in_lbl_right">02</span>
+																	</label>
+																	<label class="sub_dates_check">
+																		<input type="checkbox" class="cbr">
+																		May<span class="in_lbl_right">03</span>
+																	</label>
+																	<label class="sub_dates_check">
+																		<input type="checkbox" class="cbr">
+																		September<span class="in_lbl_right">05</span>
+																	</label>
+																</div>
+														</label>
+														<label class="label_filter_tabs_date">
+																<div class="click_sub_date">
+																<input type="checkbox" class="cbr">
+																2011 <i class="icon-chevron-down"></i><span class="in_lbl_right">40</span>
+																</div>
+																<div class="tabs_inside_date">
+																	<label class="sub_dates_check">
+																		<input type="checkbox" class="cbr">
+																		March<span class="in_lbl_right">02</span>
+																	</label>
+																	<label class="sub_dates_check">
+																		<input type="checkbox" class="cbr">
+																		May<span class="in_lbl_right">03</span>
+																	</label>
+																	<label class="sub_dates_check">
+																		<input type="checkbox" class="cbr">
+																		September<span class="in_lbl_right">05</span>
+																	</label>
+																</div>
+														</label>
+														<label class="label_filter_tabs_date">
+																<div class="click_sub_date">
+																<input type="checkbox" class="cbr">
+																2012 <i class="icon-chevron-down"></i><span class="in_lbl_right">20</span>
+																</div>
+																<div class="tabs_inside_date">
+																	<label class="sub_dates_check">
+																		<input type="checkbox" class="cbr">
+																		March<span class="in_lbl_right">02</span>
+																	</label>
+																	<label class="sub_dates_check">
+																		<input type="checkbox" class="cbr">
+																		May<span class="in_lbl_right">03</span>
+																	</label>
+																	<label class="sub_dates_check">
+																		<input type="checkbox" class="cbr">
+																		September<span class="in_lbl_right">05</span>
+																	</label>
+																</div>
+														</label>
+														<label class="label_filter_tabs_date">
+																<div class="click_sub_date">
+																<input type="checkbox" class="cbr">
+																2013 <i class="icon-chevron-down"></i><span class="in_lbl_right">18</span>
+																</div>
+																<div class="tabs_inside_date">
+																	<label class="sub_dates_check">
+																		<input type="checkbox" class="cbr">
+																		March<span class="in_lbl_right">02</span>
+																	</label>
+																	<label class="sub_dates_check">
+																		<input type="checkbox" class="cbr">
+																		May<span class="in_lbl_right">03</span>
+																	</label>
+																	<label class="sub_dates_check">
+																		<input type="checkbox" class="cbr">
+																		September<span class="in_lbl_right">05</span>
+																	</label>
+																</div>
+														</label>
+														<label class="label_filter_tabs_date">
+																<div class="click_sub_date">
+																<input type="checkbox" class="cbr">
+																2014 <i class="icon-chevron-down"></i><span class="in_lbl_right">48</span>
+																</div>
+																<div class="tabs_inside_date">
+																	<label class="sub_dates_check">
+																		<input type="checkbox" class="cbr">
+																		March<span class="in_lbl_right">02</span>
+																	</label>
+																	<label class="sub_dates_check">
+																		<input type="checkbox" class="cbr">
+																		May<span class="in_lbl_right">03</span>
+																	</label>
+																	<label class="sub_dates_check">
+																		<input type="checkbox" class="cbr">
+																		September<span class="in_lbl_right">05</span>
+																	</label>
+																</div>
+														</label>
+														</div>
+													</div>
+												</form>
+											</div>
+										<div class="clear"></div>
+									</div>
+									</div>
+								</div>
+									<div class="clear"></div>
+								
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					
+					<div class="col-md-9 no-padding">
+				<div class= "header-class" "> Search Result >>  View / Update vehicle order</div>
+				</div>
+					<div class="col-md-9 ">
+					
+							
+							<div class="clear"></div>
+				
+						<div class="table_div margin-bottom-20 margin-top-5 box-height" >
+							<div class="col-md-12 no_padding ">
+								<h4> View/Update Vehicle Order</h4>
+								<div class=" padding-top-10 bg-color">
+								
+								
+								<div class="col-md-12 no-padding-left-right">
+								<div class="col-md-3 font-class">
+									<span>Customer Details </span> <span class="glyphicon glyphicon-circle-arrow-left"></span>
+								</div>
+								<div class="col-md-9 no-padding">
+									<div class="button-right-class">
+												<button type="submit" class="btn btn-primary custom-btn btn-width">Change Owner</button> 
+									</div>
+								</div>
+								</div>
+								<div class="clear"></div>
+								<div class="col-md-12  margin-box ">
+									<div class="col-md-6 margin-box boder-bottom-class no-padding-left-right ">
+										
+										<div class="col-md-12  padding-box details inner-bg-color height-class ">
+													<div class="col-md-4 pull-left newimg">
+													<img src="img/mark.png">
+													</div>
+														<div class="col-md-8 pull-left">
+													<div>	<b>Mr. sven Lennartz</b></div>
+													<div>Gender : Male</div>
+													<div>DOB:12/ 07/1987</div>
+													<div>Company name:larsen & Turbo</div>
+													<div>Job title:managing Director</div>
+														</div>								
+										</div>
+									</div>
+								<div class="col-md-6 margin-box no-padding-left-right ">
+									
+									<div class="col-md-12   padding-box details inner-bg-color  ">
+												
+													<div class="col-md-12 pull-left margin-bottom">
+												
+														<div>Mobile : Male</div>
+														<div>TelePhone:12/ 07/1987</div>
+														<div>Alternative No.:larsen & Turbo</div>
+														<div>Email :managing Director</div>
+													</div>
+												<div class="clear"></div>
+												<div class="col-md-12 pull-left  margin-bottom border-top-class">
+														<h4>Primary Address</h4>
+														<div>Mobile : Male</div>
+														<div>TelePhone:12/ 07/1987</div>
+														<div>Alternative No.:larsen & Turbo</div>
+														<div>Email :managing Director</div>
+													</div>	
+													
+
+									</div>
+								</div>
+								</div>
+								<div class="clear"></div>
+								
+								
+							
+							</div>
+							
+							</div>
+							<div class="col-md-12 no_padding ">
+							<h4> Configuration & Order Details</h4>
+							
+								<!-- <div class="btn-group background-color-class">
+									<button type="button" class="btn btn-primary btn-background-color">Primary Details</button>
+									<button type="button" class="btn btn-primary btn-background-color">Option Details</button>
+									<button type="button" class="btn btn-primary btn-background-color">MOE</button>
+									<button type="button" class="btn btn-primary btn-background-color">Order Details</button>
+								</div> -->
+							 <ul class="nav nav-tabs background-color-class no-margin" id="myTab">
+										<li class="active" ><a  data-toggle="tab " href="#sectionA">Primary Details</a></li>
+										<li ><a data-toggle="tab" href="#sectionB">Option Details</a></li>
+										<li  ><a  data-toggle="tab" href="#sectionC">MOE</a></li>
+										<li  ><a  data-toggle="tab" href="#sectionD">Order Details</a></li>
+										
+							</ul>
+							<div class="tab-content no_padding no-padding-top">
+								<div id="sectionA" class="tab-pane fade in active col-md-12 no_padding">
+											<div class="col-md-6 no_padding">			
+													<table class="table table-striped no_padding border-right-class">
+														
+														
+														<tbody>
+															<tr>
+																<td class="table-class">Order Refrence No.</td>
+																<td  class="table-class">JFDHEKDHJK2132321KD</td>
+																
+																
+															</tr>
+															<tr>
+																<td  class="table-class">Model :</td>
+																<td  class="table-class">mcLAREN P1 GTR</td>
+																
+															</tr>
+															<tr>
+																<td  class="table-class">Varient :</td>
+																<td  class="table-class">mcLAREN 650s Spider 3.8L V8 Petrol</td>
+																
+															</tr>
+															 <tr>
+																 <td  class="table-class">Order Date :</td>
+																 <td  class="table-class">12/03/2015</td>
+																
+															</tr>
+															<tr>
+																<td  class="table-class">Order Stauts :</td>
+																 <td  class="table-class">Awaiting Shipment</td>
+																
+															</tr>
+														</tbody>
+													</table>
+												</div>
+												<div class="col-md-6 no_padding ">			
+													<table class="table table-striped no_padding">
+														
+														
+														<tbody>
+															<tr>
+																<td  class="table-class">df</td>
+																<td  class="table-class">dfds</td>
+																
+																
+															</tr>
+															<tr>
+																<td  class="table-class">Configuration </td>
+																<td  class="table-class">Pure LHD Couple pearl WHite dec FOK</td>
+																
+															</tr>
+															<tr>
+																<td  class="table-class">Retailer Name :</td>
+																<td  class="table-class">kaskaaskjd</td>
+																
+															</tr>
+															 <tr>
+																 <td  class="table-class">fds</td>
+																 <td  class="table-class">fsdf</td>
+																
+															</tr>
+															<tr>
+																<td  class="table-class">fdsfd</td>
+																 <td  class="table-class">fdfds</td>
+																
+															</tr>
+														</tbody>
+													</table>
+												</div>
+												
+								</div>
+								<div id="sectionB" class="tab-pane fade col-md-12 no_padding">
+								   <div class="col-md-3 no-padding">
+									<ul class="list-group marging-left-0">
+										<li class="list-group-item">Code</li>
+										<li class="list-group-item">PS-04june2013-mac-2</li>        
+										<li class="list-group-item">PS-04june2013-mac-2</li>
+										<li class="list-group-item">PS-04june2013-mac-2</li>
+									</ul>
+								   
+								   </div>
+									<div class="col-md-9 no-padding ">
+									<ul class="list-group marging-left-0">
+										<li class="list-group-item">Varient</li>
+										<li class="list-group-item">Door insert - Carbon black alcantra</li>        
+										<li class="list-group-item">Door insert - Carbon black alcantra</li>
+										<li class="list-group-item">Door insert - Carbon black alcantra</li>
+									</ul>
+								   
+								   </div>
+								   
+								</div>
+								<div id="sectionC" class="tab-pane fade col-md-12 no_padding">
+								   <div class="col-md-6 no-padding">
+									 <div class="checkbox margin-top-left-5 ">
+									<label ><input type="checkbox"> MOE Request<br>(MOE request can not be scheduled)</label>
+									</div>
+								   
+								   </div>
+									<div class="col-md-6 no-padding ">
+											<div class="input-group margin-top-left-5">
+											<label>Be Spoke Request Details*</label>
+												<textarea class="form-control custom-control" rows="12" cols="30" ></textarea>     
+												
+											</div>
+								   </div>
+								   
+								</div>
+								<div id="sectionD" class="tab-pane fade col-md-12 no_padding">
+								   <div class="col-md-6 no-padding">
+										<form class="margin-top-left-5">
+											
+											<div class="form-group padding-left-right-5">
+												<label>Deposite Refrence*</label>
+												<input type="text" class="form-control border-radius-0 form-input-class" id="inputPassword" placeholder="Customer Email ID">
+											</div>
+											<div class="form-group padding-left-right-5">
+												<label>Delete Managemet System Order Refrence*</label>
+												<input type="text" class="form-control border-radius-0 form-input-class" id="inputPassword" placeholder="Deler Management System ref.">
+											</div>
+												<div class="form-group padding-left-right-3 "> 
+													<div class="col-md-6">
+														<form role="form" class="margin-bottom-0">
+															<div class="form-group margin-bottom-0">
+															
+															<label>Vehicale User* </label>
+															<select class="form-control font-size-12 border-radius-0 " id="sboxit-3">
+																<option value="">mcLAREN 650S SPIDER</option>
+																<option value="">mcLAREN 650S SPIDER</option>
+																<option value="">mcLAREN 650S SPIDER</option>
+																<option value="">mcLAREN 650S SPIDER</option>
+																
+															</select>
+														
+															</div>
+														</form>
+													</div>
+													<div class="col-md-6">
+														<form role="form" class="margin-bottom-0">
+															<div class="form-group margin-bottom-0">
+															
+															<label> Transport method*</label>
+															<select class="form-control font-size-12 border-radius-0 " id="sboxit-4">
+																<option value="">mcLAREN 650S SPIDER</option>
+																<option value="">mcLAREN 650S SPIDER</option>
+																<option value="">mcLAREN 650S SPIDER</option>
+																<option value="">mcLAREN 650S SPIDER</option>
+																
+															</select>
+														
+															</div>
+														</form>
+													</div>
+											</div>
+											
+											 
+											 
+											
+										</form>
+								   
+								   </div>
+									<div class="col-md-6 no-padding ">
+										<div class="input-group margin-top-left-5">
+											<label>Note</label>
+												<textarea class="form-control custom-control" rows="5" cols="30" ></textarea>     
+												
+											</div>		
+											
+											<form class="form-inline margin-class" role="form" >
+												   <div class="form-group">
+													 
+												<input type="text" class="form-control border-radius-0 form-input-class" id="inputPassword" placeholder="Customer Email ID">
+														
+												   </div>
+												  
+												   <button type="submit" class="btn btn-default btn-class">Select Production Slot</button>
+												</form>
+								   </div>
+								   
+								</div>
+								</div>
+							</div>
+						
+						
+						
+		
+						
+						</div>
+						</div>
+						
+					</div>			
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<!-- main part of page ends here-->
+		
+		<!-- footer part of page starts here-->
+		
+		<!--footer ends here-->
+		<div class="clear"></div>
+		<!--<div class="footer_line"></div>-->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="css/select2.css">
+		<link rel="stylesheet" href="css/select2-bootstrap.css">
+		<!-- JavaScripts initializations and stuff -->
+		
+		
+		<script src="js/joinable.js"></script>
+		<script src="js/select2.min.js"></script>
+		<script src="js/jquery-ui.min.js"></script>
+		<script src="js/xenon-api.js"></script>
+		<script src="js/xenon-toggles.js"></script>
+		<script src="js/jquery.selectBoxIt.min.js"></script>
+		<script src="js/xenon-custom.js"></script>
+		<script src="js/bootstrap-datepicker.js"></script>
+		
+		<script type="text/javascript">
+			$(document).ready(function()
+			{
+				 $("#myTab a").click(function(e){
+    	e.preventDefault();
+    	$(this).tab('show');
+    });
+				$('.datepicker').datepicker()
+				
+				$("#sboxit-1").selectBoxIt().on('open', function()
+				{	// Adding Custom Scrollbar
+					$(this).data('selectBoxSelectBoxIt').list.perfectScrollbar();
+				});
+				
+					$("#sboxit-2").selectBoxIt().on('open', function()
+				{	// Adding Custom Scrollbar
+					$(this).data('selectBoxSelectBoxIt').list.perfectScrollbar();
+				});
+					$("#sboxit-3").selectBoxIt().on('open', function()
+				{	// Adding Custom Scrollbar
+					$(this).data('selectBoxSelectBoxIt').list.perfectScrollbar();
+				});
+					$("#sboxit-4").selectBoxIt().on('open', function()
+				{	// Adding Custom Scrollbar
+					$(this).data('selectBoxSelectBoxIt').list.perfectScrollbar();
+				});
+				$('.car_blocks_line_fill').animate({width:'100%'},2000,function(){
+					$('.here_car').fadeIn('slow');				
+				});
+				var win_ht=$('.right_main_height').height()+20;
+				$('.tab_menu_col').css('min-height',win_ht);
+				
+				$('.pull-menu').click(function(){
+					$( ".right_main_height").animate({width: '95.6%'}, 600);
+					$(this).hide();
+					$('.tab_menu_col').animate({width:'4.3%'},600,function(){
+						$('.search_icon').css('width','100%');
+						$('.filter_icon').css('width','110%');
+					});
+					$('.tab-my-content .tab-pane').animate({opacity:'0'},600,function(){
+						$('.tab-my-content').css('width','43px');
+						$('.nav-tabs').css('width','43px');
+						$('.my-block').css('width','43px');
+						$('.tab-my-content .tab-pane').css('opacity','0');
+						});				
+					$('.pull_menu_second').show();	
+				});
+				$('.pull_menu_second').click(function(){
+					$('.tab-my-content .tab-pane').css('opacity','1');
+					$(this).hide();
+					$( ".right_main_height").animate({width: '75%'}, 600);
+					$('.pull-menu').show();
+					$('.tab-my-content').css('width','auto');
+					$('.nav-tabs').css('width','100%');
+					$('.my-block').css('width','100%');
+					$('.tab_menu_col').animate({width:'25%'},600,function(){
+						$('.search_icon').css('width','auto');
+						$('.filter_icon').css('width','auto');
+					});
+				})
+				$('.click_collapse').click(function(){
+					$(this).parent().find('.filter_box').slideToggle();
+					$("i",this).toggleClass("icon-chevron-down icon-chevron-up");
+					$(this).toggleClass('click_collapse_toggle');
+				});
+				$('.click_sub_date').click(function(){
+					
+					if($(this).parent().find('.cbr-replaced').hasClass('cbr-checked')){
+						$(this).parent().find('.tabs_inside_date').slideDown();
+						$("i",this).addClass("icon-chevron-up");
+						$("i",this).removeClass("icon-chevron-down");
+					}
+					else{
+						$(this).parent().find('.tabs_inside_date').slideUp();
+						$("i",this).toggleClass("icon-chevron-down icon-chevron-up");
+						$("i",this).removeClass("icon-chevron-up");
+						$("i",this).addClass("icon-chevron-down");				
+					}
+				});
+				$('.tabs_inside_date_first_child').show();
+			});
+			$('.search_icon').click(function(){
+				if($('.pull_menu_second').is(':visible')) {
+					$('.pull-menu').show();
+					$('.pull_menu_second').hide();
+					$('.tab-my-content').css('width','auto');
+					$('.tab_menu_col').animate({width:'25%'},function(){
+					$('.search_icon').css('width','auto');
+					$('.filter_icon').css('width','auto');
+					$('.tab-my-content .tab-pane').css('opacity','1');
+					});
+				}	
+			});
+			$('.filter_icon').click(function(){
+				if($('.pull_menu_second').is(':visible')) {
+					$('.pull-menu').show();
+					$('.pull_menu_second').hide();
+					$('.tab-my-content').css('width','auto');
+					$('.tab_menu_col').animate({width:'25%'},function(){
+					$('.search_icon').css('width','auto');
+					$('.filter_icon').css('width','auto');
+					$('.tab-my-content .tab-pane').css('opacity','1');
+					});
+				}
+				
+			});
+			var doc_ht=$(document).height(); 
+			</script>
+			<div class="clear"></div>
+	</body>
+	
+</html>

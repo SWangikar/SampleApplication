@@ -1,0 +1,225 @@
+.body-Container{
+	margin-top:90px;
+}
+.form-Container {
+    background-color: #F0F2F1;
+    height: auto;
+    width: 80%;
+    margin-left: 10%;
+    display: inline-block;
+    
+}
+
+.form-Container1
+{
+    padding:20px 10px;
+}
+.firstCol {
+    border-right: 1px solid #dedede;
+    height: 100%;
+        min-height: 465px;
+}
+.secondCol{
+	border-right: 1px solid #FFF;
+    height: 100%;
+}
+.Btn-Container {
+    width: 100px;
+    float: right;
+    margin-right: 10%;
+}
+.float-left-width40{
+       float: left;
+    width: 38%;
+    height: 105px;
+    padding: 5px 5px 5px 5px;
+}
+.height100 {
+    height: 100px;
+        padding: 5px;
+}
+.display-Inline-block {
+    display: inline-block;
+    width: 100%;
+    margin-top: 15px;
+}
+.UploadPhoto{
+        height: 100%;
+    background-color: #fff;
+        width: 100% !important;
+
+}
+.col.wide2 {
+    width: 100%;
+    float: left;
+    input {
+    height: 40px;
+    font-size: 13px;
+        width: 100%;
+}
+}
+
+.formm1
+{
+    
+        margin: 0;
+}
+
+.col.wide4 {
+    width: 100%;
+    float: left;
+    input {
+        height: 40px;
+    font-size: 13px;
+    width: 100% !important;
+    margin-bottom: 14px;
+    margin-top: 15px;
+}
+}
+
+
+.wide3{ 
+    input {
+        height: 40px;
+        font-size: 13px;
+    }
+}
+.streetTextArea{
+    resize:none;
+        border-radius: 0px !important;
+}
+.float-left-width60{
+    
+    float: left;
+    width: 60%;
+}
+
+.dropzone .dz-default.dz-message {
+         width: 100% !important;
+    height: 100% !important;
+    background-image: url("../img/1.png") !important;
+    background-size: 80% 80% !important;
+    margin: 0px !important;
+    padding: 0px !important;
+    top: 0px !important;
+    left: 0px !important;
+    background-position: center center !important;
+}
+.cbr-replaced.cbr-orange .cbr-state {
+    
+    border-color: #ccc !important;
+}
+.calender {
+    color: $theme-primary-orange-color;
+}
+.CRM-Dropdown{
+    color:$theme-primary-orange-color;
+}
+.margin-top20{
+    margin-top:20px;
+}
+.padding-left0{
+    padding-left:0px !important;
+}
+
+
+.CRM-Dropdown.form-control
+{
+    
+    height:40px !important; 
+}
+
+.margin-top-15
+{
+    
+    margin-top:15px;
+}
+.margin-top-5{
+    margin-top:5px;
+}
+    .height-95{
+    height: 95px !important;
+    }
+
+    .margin-bottom2{
+        margin-bottom: 2px !important;
+    }
+    .margin-top10{
+    margin-top : 10px !important;
+    }
+    .address-Type {
+    width: 50%;
+}
+
+
+
+.custom-file{
+    float: left;
+    position: relative;
+    height: 105px;
+    width: 100% !important;
+}
+.custom-file #file {
+    position: absolute;
+    bottom:0;
+    left:0;
+        width: 100% !important;
+    height: 105px;
+    opacity: 0;
+}
+.custom-file div{
+    float: left;
+    
+    height: 105px;
+}
+.custom-file div.text {
+    width: 100% !important;
+    
+    height: 95px !important;
+    background-image: url(../img/1.png) !important;
+    background-repeat: no-repeat;
+    background-size: contain !important;
+    background-position: center center !important;
+}
+.Upload-photoForm {
+    background-color: #fff;
+    margin-right: 2%;
+}
+
+.col.wide4 input {
+    height: 46px;
+    font-size: 13px;
+    width: 100%!important;
+}
+
+/*CRM Page CSS*/
+
+.crm-th-17 {
+    width: 17% !important;
+}
+.crm-th-25{
+width: 24.5% !important;
+}
+.advanceSearch{
+    color:$theme-primary-orange-color;
+    font-weight: bold;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ccc;
+    width: 98%;
+}
+.CRM-Search-btn{
+width:100%;
+text-align: center;
+}
+.withput-scroller::-webkit-scrollbar {
+    width: 0.0em;
+    height: 0.0em;
+}
+.withput-scroller:-webkit-scrollbar {
+    width: 0.0em;
+    height: 0.0em;
+}
+.withput-scroller ::-webkit-scrollbar-thumb{
+    width: 0.0em;
+    height: 0.0em;
+}
